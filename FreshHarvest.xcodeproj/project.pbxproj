@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		073BBA7E0E5F9611F462DFC3 /* LogoMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300E64FDB31C8890125DFD5 /* LogoMark.swift */; };
+		0A14954820728AF449B3738E /* HeaderBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D5AB02547E20C38A671FA /* HeaderBar.swift */; };
+		1C6D56DDFBDA2E6A196E8430 /* FloatingCartBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF83E66035D3F02DB3C23FCD /* FloatingCartBar.swift */; };
+		1E37765B8D72C68EB6F9D3CC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB7EF352C907BCD4925154 /* Models.swift */; };
+		212EE58ADB11BFB78D8243DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09FB8D169A0CBA82B8E4BA7D /* Assets.xcassets */; };
+		350862F951B0251B47AD05BA /* CategoryRail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67900F30A3D3947FAD0CB7D7 /* CategoryRail.swift */; };
+		3F9F4E906F26ECBDA3E7170E /* PlaceholderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871B90DCAE26BEF3EB538E2 /* PlaceholderScreen.swift */; };
+		4ECED96169C31ADE1C225598 /* MSFilled-Subset.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73A5AE5C77CCBED6C80695A2 /* MSFilled-Subset.ttf */; };
+		5DE56BE43888DAABA94A5DCD /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8140549120B6D9635AB0D3FA /* SampleData.swift */; };
+		6AA60F5D5264E1D08C7A00B9 /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF560A86A7B09A935924C84B /* PlusJakartaSans-SemiBold.ttf */; };
+		757AD52E82DB3D360BDFA35D /* QuickFilterStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0E3648292C15A8AFE1B46 /* QuickFilterStrip.swift */; };
+		7C51E36BFAD6EE4FAAD564B0 /* ModeSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5F0C1E9CC64658CB687C5 /* ModeSwitcher.swift */; };
+		83A8884F3EB162AB59DD9ADA /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF2611FEFC4EE461E526F85 /* Typography.swift */; };
+		83D10D9F0431809FDEA48243 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49CC824F4E7C65F87BFBCC75 /* Preview Assets.xcassets */; };
+		94F4EF3873020C9134F98EEF /* CartSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DD441A4C4EAEDEDA27B40 /* CartSheet.swift */; };
+		95AC652302A5132D66AD19CD /* BottomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC645DDD37DAE21EFE4062C6 /* BottomNavBar.swift */; };
+		A5D919E09909E2A226597801 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1598AB8BE629836A57CF0D3 /* Layout.swift */; };
+		AA8A28DEE0E9EFADD2BAC69B /* FontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593101A51EB73FBB1626F4EB /* FontLoader.swift */; };
+		ABD818CA1B9643201DF1DCD0 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C414D87B00FCF335F5B233 /* Icons.swift */; };
+		AFEF84410517107F459CFB3A /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5838959262B728CDE282CAA /* PlusJakartaSans-Bold.ttf */; };
+		B57188D91CEA49CB8EDE36B8 /* MSOutlined-Subset.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ACF800964AE79B1F563626D /* MSOutlined-Subset.ttf */; };
+		B639D07CA2ED14E9403919AB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10ADA16889EBE4660F0F8C /* SearchBar.swift */; };
+		D1793155747F6A80E6AEA9D2 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C87F73243AF2E771E7EC656 /* PlusJakartaSans-Regular.ttf */; };
+		D7242867663EB0BF6B426B7F /* RestaurantCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA365E8E2FF7849782087B /* RestaurantCard.swift */; };
+		DE0310D00D097275A273E516 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8023163D4EE9DADCD773CF4 /* HomeScreen.swift */; };
+		E1B8CD37210DE7DDC680302B /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F399A70C93AE5C0D764D5 /* Color+Hex.swift */; };
+		E24310B7D6DA8D9595CE3662 /* PlusJakartaSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61405CF6048D4FABD9A81C0C /* PlusJakartaSans-ExtraBold.ttf */; };
+		E88458B17F039F1B66C2302A /* PromoBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9469082B609971ED29242540 /* PromoBanner.swift */; };
+		EDD177B8018AD8E35DFCB4E0 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCA23A168C12BD02FBF0904 /* AppStore.swift */; };
+		F295161F52D797198F0ABCFE /* Badges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485857E8C2AAD014B25435A3 /* Badges.swift */; };
+		F94BE7671DFCA645A7FB020A /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA836A8C5DB39CC29EE0F4 /* Palette.swift */; };
+		F963B9F0536FD39C3D7AD32A /* FreshHarvestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F09BA41AE2C00E073B1E7E /* FreshHarvestApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0871B90DCAE26BEF3EB538E2 /* PlaceholderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderScreen.swift; sourceTree = "<group>"; };
+		0899C859C011B7F726FB5941 /* FreshHarvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshHarvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09FB8D169A0CBA82B8E4BA7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BCA23A168C12BD02FBF0904 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		11CB7EF352C907BCD4925154 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		1AF2611FEFC4EE461E526F85 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		23C414D87B00FCF335F5B233 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		28DA365E8E2FF7849782087B /* RestaurantCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCard.swift; sourceTree = "<group>"; };
+		3300E64FDB31C8890125DFD5 /* LogoMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoMark.swift; sourceTree = "<group>"; };
+		485857E8C2AAD014B25435A3 /* Badges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badges.swift; sourceTree = "<group>"; };
+		49CC824F4E7C65F87BFBCC75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C87F73243AF2E771E7EC656 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
+		593101A51EB73FBB1626F4EB /* FontLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLoader.swift; sourceTree = "<group>"; };
+		60B0E3648292C15A8AFE1B46 /* QuickFilterStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFilterStrip.swift; sourceTree = "<group>"; };
+		61405CF6048D4FABD9A81C0C /* PlusJakartaSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		67900F30A3D3947FAD0CB7D7 /* CategoryRail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRail.swift; sourceTree = "<group>"; };
+		73A5AE5C77CCBED6C80695A2 /* MSFilled-Subset.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MSFilled-Subset.ttf"; sourceTree = "<group>"; };
+		7F7F399A70C93AE5C0D764D5 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		8140549120B6D9635AB0D3FA /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		822DD441A4C4EAEDEDA27B40 /* CartSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartSheet.swift; sourceTree = "<group>"; };
+		9469082B609971ED29242540 /* PromoBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoBanner.swift; sourceTree = "<group>"; };
+		9ACF800964AE79B1F563626D /* MSOutlined-Subset.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MSOutlined-Subset.ttf"; sourceTree = "<group>"; };
+		A5838959262B728CDE282CAA /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
+		A7F09BA41AE2C00E073B1E7E /* FreshHarvestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshHarvestApp.swift; sourceTree = "<group>"; };
+		AC645DDD37DAE21EFE4062C6 /* BottomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBar.swift; sourceTree = "<group>"; };
+		AF560A86A7B09A935924C84B /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		AF83E66035D3F02DB3C23FCD /* FloatingCartBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingCartBar.swift; sourceTree = "<group>"; };
+		B1598AB8BE629836A57CF0D3 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		BD10ADA16889EBE4660F0F8C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E8023163D4EE9DADCD773CF4 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E93D5AB02547E20C38A671FA /* HeaderBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBar.swift; sourceTree = "<group>"; };
+		EFE5F0C1E9CC64658CB687C5 /* ModeSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSwitcher.swift; sourceTree = "<group>"; };
+		F9BA836A8C5DB39CC29EE0F4 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		017D3D002D206AD8C436EF3E = {
+			isa = PBXGroup;
+			children = (
+				E346F995EF722D5FC7501317 /* FreshHarvest */,
+				44271826E285ECE8B0E21B34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03F96621EC831BCF759584B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF12BDFF991AADAA90C8FFC2 /* Fonts */,
+				09FB8D169A0CBA82B8E4BA7D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		09A26379E2D5A18620A23A20 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FB68B0A9A5E31960C45DE7D7 /* Home */,
+				35E8EE4CAD39D1F2DDA734AE /* Placeholders */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1BA255B3D7D64A15883F52AA /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				60C8611824F51A99760B76B7 /* Components */,
+				7F7F399A70C93AE5C0D764D5 /* Color+Hex.swift */,
+				23C414D87B00FCF335F5B233 /* Icons.swift */,
+				B1598AB8BE629836A57CF0D3 /* Layout.swift */,
+				3300E64FDB31C8890125DFD5 /* LogoMark.swift */,
+				F9BA836A8C5DB39CC29EE0F4 /* Palette.swift */,
+				1AF2611FEFC4EE461E526F85 /* Typography.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		26919B54128ADBB4A9B7FF39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11CB7EF352C907BCD4925154 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D15DBD4FFDFC9B141AA6E7E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				49CC824F4E7C65F87BFBCC75 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35E8EE4CAD39D1F2DDA734AE /* Placeholders */ = {
+			isa = PBXGroup;
+			children = (
+				0871B90DCAE26BEF3EB538E2 /* PlaceholderScreen.swift */,
+			);
+			path = Placeholders;
+			sourceTree = "<group>";
+		};
+		44271826E285ECE8B0E21B34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0899C859C011B7F726FB5941 /* FreshHarvest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54F9763229F8A051C21AABD8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0BCA23A168C12BD02FBF0904 /* AppStore.swift */,
+				593101A51EB73FBB1626F4EB /* FontLoader.swift */,
+				A7F09BA41AE2C00E073B1E7E /* FreshHarvestApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		60C8611824F51A99760B76B7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				485857E8C2AAD014B25435A3 /* Badges.swift */,
+				AC645DDD37DAE21EFE4062C6 /* BottomNavBar.swift */,
+				67900F30A3D3947FAD0CB7D7 /* CategoryRail.swift */,
+				AF83E66035D3F02DB3C23FCD /* FloatingCartBar.swift */,
+				E93D5AB02547E20C38A671FA /* HeaderBar.swift */,
+				EFE5F0C1E9CC64658CB687C5 /* ModeSwitcher.swift */,
+				9469082B609971ED29242540 /* PromoBanner.swift */,
+				60B0E3648292C15A8AFE1B46 /* QuickFilterStrip.swift */,
+				28DA365E8E2FF7849782087B /* RestaurantCard.swift */,
+				BD10ADA16889EBE4660F0F8C /* SearchBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E346F995EF722D5FC7501317 /* FreshHarvest */ = {
+			isa = PBXGroup;
+			children = (
+				54F9763229F8A051C21AABD8 /* App */,
+				EFC49509E458080B3C368B2F /* Data */,
+				1BA255B3D7D64A15883F52AA /* DesignSystem */,
+				09A26379E2D5A18620A23A20 /* Features */,
+				26919B54128ADBB4A9B7FF39 /* Models */,
+				2D15DBD4FFDFC9B141AA6E7E /* Preview Content */,
+				03F96621EC831BCF759584B8 /* Resources */,
+			);
+			path = FreshHarvest;
+			sourceTree = "<group>";
+		};
+		EF12BDFF991AADAA90C8FFC2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				73A5AE5C77CCBED6C80695A2 /* MSFilled-Subset.ttf */,
+				9ACF800964AE79B1F563626D /* MSOutlined-Subset.ttf */,
+				A5838959262B728CDE282CAA /* PlusJakartaSans-Bold.ttf */,
+				61405CF6048D4FABD9A81C0C /* PlusJakartaSans-ExtraBold.ttf */,
+				4C87F73243AF2E771E7EC656 /* PlusJakartaSans-Regular.ttf */,
+				AF560A86A7B09A935924C84B /* PlusJakartaSans-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EFC49509E458080B3C368B2F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8140549120B6D9635AB0D3FA /* SampleData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB68B0A9A5E31960C45DE7D7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				822DD441A4C4EAEDEDA27B40 /* CartSheet.swift */,
+				E8023163D4EE9DADCD773CF4 /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F4E86C2327E105F7392FC54 /* FreshHarvest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71F320C02F70AF5E842F3676 /* Build configuration list for PBXNativeTarget "FreshHarvest" */;
+			buildPhases = (
+				284620A225BD4B3B45594144 /* Sources */,
+				B935D2287A3F90A9D9CD4420 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreshHarvest;
+			packageProductDependencies = (
+			);
+			productName = FreshHarvest;
+			productReference = 0899C859C011B7F726FB5941 /* FreshHarvest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94157D85BDA0230F2DB7DB1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					1F4E86C2327E105F7392FC54 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1BA83E0AF8280971E530BDCB /* Build configuration list for PBXProject "FreshHarvest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 017D3D002D206AD8C436EF3E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 44271826E285ECE8B0E21B34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F4E86C2327E105F7392FC54 /* FreshHarvest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B935D2287A3F90A9D9CD4420 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212EE58ADB11BFB78D8243DE /* Assets.xcassets in Resources */,
+				4ECED96169C31ADE1C225598 /* MSFilled-Subset.ttf in Resources */,
+				B57188D91CEA49CB8EDE36B8 /* MSOutlined-Subset.ttf in Resources */,
+				AFEF84410517107F459CFB3A /* PlusJakartaSans-Bold.ttf in Resources */,
+				E24310B7D6DA8D9595CE3662 /* PlusJakartaSans-ExtraBold.ttf in Resources */,
+				D1793155747F6A80E6AEA9D2 /* PlusJakartaSans-Regular.ttf in Resources */,
+				6AA60F5D5264E1D08C7A00B9 /* PlusJakartaSans-SemiBold.ttf in Resources */,
+				83D10D9F0431809FDEA48243 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		284620A225BD4B3B45594144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD177B8018AD8E35DFCB4E0 /* AppStore.swift in Sources */,
+				F295161F52D797198F0ABCFE /* Badges.swift in Sources */,
+				95AC652302A5132D66AD19CD /* BottomNavBar.swift in Sources */,
+				94F4EF3873020C9134F98EEF /* CartSheet.swift in Sources */,
+				350862F951B0251B47AD05BA /* CategoryRail.swift in Sources */,
+				E1B8CD37210DE7DDC680302B /* Color+Hex.swift in Sources */,
+				1C6D56DDFBDA2E6A196E8430 /* FloatingCartBar.swift in Sources */,
+				AA8A28DEE0E9EFADD2BAC69B /* FontLoader.swift in Sources */,
+				F963B9F0536FD39C3D7AD32A /* FreshHarvestApp.swift in Sources */,
+				0A14954820728AF449B3738E /* HeaderBar.swift in Sources */,
+				DE0310D00D097275A273E516 /* HomeScreen.swift in Sources */,
+				ABD818CA1B9643201DF1DCD0 /* Icons.swift in Sources */,
+				A5D919E09909E2A226597801 /* Layout.swift in Sources */,
+				073BBA7E0E5F9611F462DFC3 /* LogoMark.swift in Sources */,
+				7C51E36BFAD6EE4FAAD564B0 /* ModeSwitcher.swift in Sources */,
+				1E37765B8D72C68EB6F9D3CC /* Models.swift in Sources */,
+				F94BE7671DFCA645A7FB020A /* Palette.swift in Sources */,
+				3F9F4E906F26ECBDA3E7170E /* PlaceholderScreen.swift in Sources */,
+				E88458B17F039F1B66C2302A /* PromoBanner.swift in Sources */,
+				757AD52E82DB3D360BDFA35D /* QuickFilterStrip.swift in Sources */,
+				D7242867663EB0BF6B426B7F /* RestaurantCard.swift in Sources */,
+				5DE56BE43888DAABA94A5DCD /* SampleData.swift in Sources */,
+				B639D07CA2ED14E9403919AB /* SearchBar.swift in Sources */,
+				83A8884F3EB162AB59DD9ADA /* Typography.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		159B36CCCB11A42C81ADD66C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FreshHarvest/Preview Content\"";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FreshHarvest/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshharvest.app;
+				PRODUCT_NAME = FreshHarvest;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DC0E4981FD3F87338BA4F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84D56A11FB5DCD98571582F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3E7D03643A2796F42AADE0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FreshHarvest/Preview Content\"";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FreshHarvest/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.freshharvest.app;
+				PRODUCT_NAME = FreshHarvest;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BA83E0AF8280971E530BDCB /* Build configuration list for PBXProject "FreshHarvest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC0E4981FD3F87338BA4F63 /* Debug */,
+				84D56A11FB5DCD98571582F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		71F320C02F70AF5E842F3676 /* Build configuration list for PBXNativeTarget "FreshHarvest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				159B36CCCB11A42C81ADD66C /* Debug */,
+				B3E7D03643A2796F42AADE0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94157D85BDA0230F2DB7DB1D /* Project object */;
+}
