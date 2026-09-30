@@ -1,4 +1,4 @@
-name: Build iOS App (.ipa)
+name: Build Unsigned iOS App (.ipa)
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-ios:
+  build-ios-unsigned:
     runs-on: macos-14
 
     steps:
@@ -18,75 +18,34 @@ jobs:
         with:
           xcode-version: '15.4'
 
-      - name: Instalar certificados de firma y perfil de provisión
-        env:
-          BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
-          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
-          BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
-          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+      - name: Compilar Archive sin firma de código
         run: |
-          # Rutas temporales
-          CERTIFICATE_PATH=$RUNNER_TEMP/build_certificate.p12
-          PP_PATH=$RUNNER_TEMP/build_pp.mobileprovision
-          KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
-
-          # Decodificar secretos en Base64
-          echo -n "$BUILD_CERTIFICATE_BASE64" | base64 --decode -o $CERTIFICATE_PATH
-          echo -n "$BUILD_PROVISION_PROFILE_BASE64" | base64 --decode -o $PP_PATH
-
-          # Crear y desbloquear Keychain temporal
-          security create-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
-          security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
-          security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
-
-          # Importar certificado al keychain
-          security import $CERTIFICATE_PATH -k $KEYCHAIN_PATH -P "$P12_PASSWORD" -T /usr/bin/codesign
-          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
-          security list-keychain -d user -s $KEYCHAIN_PATH
-
-          # Copiar el perfil de provisión
-          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-          cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles/
-
-      - name: Generar ExportOptions.plist
-        run: |
-          cat <<EOF > ExportOptions.plist
-          <?xml version="1.0" encoding="UTF-8"?>
-          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-          <plist version="1.0">
-          <dict>
-              <key>method</key>
-              <string>app-store</string> <!-- Cambia a 'ad-hoc', 'development' o 'enterprise' según tu perfil -->
-              <key>signingStyle</key>
-              <string>manual</string>
-              <key>stripSwiftSymbols</key>
-              <true/>
-              <key>teamID</key>
-              <string>${{ secrets.APPLE_TEAM_ID }}</string>
-          </dict>
-          </plist>
-          EOF
-
-      - name: Compilar y generar Archive (.xcarchive)
-        run: |
-          # Si usas Workspace (CocoaPods/SPM), reemplaza '-project TuProyecto.xcodeproj' por '-workspace TuProyecto.xcworkspace'
+          # Reemplaza TuProyecto.xcodeproj y TuScheme por los datos de tu proyecto
+          # Si usas CocoaPods o SPM Workspace, cambia '-project ...' por '-workspace TuProyecto.xcworkspace'
           xcodebuild archive \
             -project TuProyecto.xcodeproj \
             -scheme TuScheme \
             -configuration Release \
             -archivePath $RUNNER_TEMP/TuProyecto.xcarchive \
-            -destination "generic/platform=iOS" \
-            CODE_SIGN_STYLE=Manual
+            -sdk iphoneos \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
 
-      - name: Exportar archivo .ipa
+      - name: Empaquetar ejecutable .app en archivo .ipa (Payload)
         run: |
-          xcodebuild -exportArchive \
-            -archivePath $RUNNER_TEMP/TuProyecto.xcarchive \
-            -exportOptionsPlist ExportOptions.plist \
-            -exportPath $RUNNER_TEMP/build_output
+          # 1. Crear estructura estándar de empaquetado iOS
+          mkdir -p $RUNNER_TEMP/Payload
+          
+          # 2. Copiar el archivo .app dentro de Payload
+          cp -r $RUNNER_TEMP/TuProyecto.xcarchive/Products/Applications/*.app $RUNNER_TEMP/Payload/
+          
+          # 3. Comprimir la carpeta Payload como un archivo .ipa
+          cd $RUNNER_TEMP
+          zip -r TuProyecto_Unsigned.ipa Payload
 
       - name: Subir artefacto (.ipa) a GitHub Actions
         uses: actions/upload-artifact@v4
         with:
-          name: app-release-ios
-          path: $RUNNER_TEMP/build_output/*.ipa
+          name: app-ios-unsigned
+          path: ${{ runner.temp }}/TuProyecto_Unsigned.ipa
