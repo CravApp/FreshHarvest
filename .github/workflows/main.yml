@@ -23,7 +23,7 @@ jobs:
           # Reemplaza TuProyecto.xcodeproj y TuScheme por los datos de tu proyecto
           # Si usas CocoaPods o SPM Workspace, cambia '-project ...' por '-workspace TuProyecto.xcworkspace'
           xcodebuild archive \
-            -project TuProyecto.xcodeproj \
+            -project FreshHarvest.xcodeproj \
             -scheme TuScheme \
             -configuration Release \
             -archivePath $RUNNER_TEMP/TuProyecto.xcarchive \
