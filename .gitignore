@@ -1,0 +1,16 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+.DS_Store
+
+# XcodeGen output (regenerate with `xcodegen generate --spec project.yml`)
+FreshHarvest.xcodeproj/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/

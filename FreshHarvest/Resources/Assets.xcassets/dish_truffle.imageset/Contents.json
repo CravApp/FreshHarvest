@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "idiom": "universal",
+      "filename": "dish_truffle.jpg",
+      "scale": "1x"
+    },
+    {
+      "idiom": "universal",
+      "filename": "dish_truffle@2x.jpg",
+      "scale": "2x"
+    },
+    {
+      "idiom": "universal",
+      "filename": "dish_truffle@3x.jpg",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}

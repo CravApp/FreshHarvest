@@ -1,0 +1,56 @@
+name: FreshHarvest
+
+options:
+  bundleIdPrefix: com.freshharvest
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    SWIFT_STRICT_CONCURRENCY: complete
+    # The app is a pixel-faithful port of a light-only design canvas.
+    TARGETED_DEVICE_FAMILY: "1,2"
+
+targets:
+  FreshHarvest:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+
+    # XcodeGen classifies files by type: `.swift` goes to the Sources phase,
+    # while `.xcassets`, `.ttf` and the preview catalog are routed to the
+    # Resources phase automatically. Info.plist is consumed by the build setting
+    # below, so it is excluded from the copy step.
+    sources:
+      - path: FreshHarvest
+        excludes:
+          - "Resources/Info.plist"
+
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.freshharvest.app
+        PRODUCT_NAME: FreshHarvest
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: FreshHarvest/Resources/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        DEVELOPMENT_ASSET_PATHS: "\"FreshHarvest/Preview Content\""
+        CODE_SIGN_STYLE: Automatic
+        # Fonts ship unsigned inside the bundle; no entitlement is needed.
+        SWIFT_EMIT_LOC_STRINGS: YES
+
+schemes:
+  FreshHarvest:
+    build:
+      targets:
+        FreshHarvest: all
+    run:
+      config: Debug
+    archive:
+      config: Release
