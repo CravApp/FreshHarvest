@@ -20,6 +20,17 @@ xcodegen generate --spec project.yml
 
 Build and run the `FreshHarvest` scheme. No signing team is required for the simulator.
 
+### Order flow test (JSONPlaceholder)
+
+JSONPlaceholder has no `/orders` resource. The order client in `FreshHarvestOrders/` maps a cart onto `POST /posts` and `GET /posts/:id` (`userId` = customer, `title` = summary, `body` = lines, total, mode and address as JSON). Why not `/todos`, and how the fake 201/404 behave, is written up in [`docs/pedidos-jsonplaceholder.md`](docs/pedidos-jsonplaceholder.md).
+
+```bash
+swift test --package-path FreshHarvestOrders
+swift run --package-path FreshHarvestOrders place-order   # manual POST + GET
+```
+
+The package is not part of the iOS app target.
+
 ---
 
 ## What was converted
@@ -120,6 +131,7 @@ Details that are easy to get wrong and were handled deliberately:
 FreshHarvest/
 ├── project.yml                     # XcodeGen spec (project.pbxproj is generated)
 ├── FreshHarvest.xcodeproj/         # generated — open this
+├── FreshHarvestOrders/             # order client + JSONPlaceholder tests (SwiftPM)
 ├── tools/lint_swift.py             # cross-reference linter (see Validation)
 └── FreshHarvest/
     ├── App/
